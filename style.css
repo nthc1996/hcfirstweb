@@ -26,7 +26,10 @@ html {
      Thứ tự chồng nhau được sắp xếp dựa theo giá trị số, thành phần HTML nào có chỉ số z-index cao hơn sẽ nằm trên, ngược lại sẽ nằm dưới, giá trị mặc định là 0, có thể sử dụng số âm. 
     Giá trị tốt nhất là không sử dụng đơn vị. */
 }
-
+.clear{
+    clear:both; 
+    /* Sử dụng để sửa lỗi float */
+}
 #nav {
     display:inline-block;
 }
@@ -135,6 +138,7 @@ margin-top: 25px;
 }
 
 .content-section{
+
 width: 800px;
 padding: 64px 0;
 margin-left: auto;
@@ -160,6 +164,26 @@ opacity: 0.4;
     line-height: 1.4;
     /* line-height: chiều cao của box 1.4 là chữ Anh, 1.6 của Việt */
     /* justify : là để căn ngang chữ đều 2 bên */
+}
+#content .member-list{
+    margin-top: 47px;
+    /* overflow: hidden;  - sử dụng để sửa lỗi float*/
+    /* Thuộc tính overflow xác định điều gì sẽ xảy ra nếu một thành phần box tràn nội dung. */
+}
+#content .member-item{
+    width: calc(100% / 3);
+    text-align: center;
+    float: left;
+}
+#content .member-name{
+    
+    margin-bottom: 15px;
+}
+#content .member-img{
+    width: 153px;
+    border-radius: 4px;
+    
+
 }
 #breadcrump {
 

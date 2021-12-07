@@ -185,6 +185,11 @@ opacity: 0.4;
     
 
 }
+#tour-section > .content-section{
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+}
 #breadcrump {
 
 }

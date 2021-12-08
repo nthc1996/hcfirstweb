@@ -1,23 +1,22 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 html {
     font-family: Lato, sans-serif;
 }
-#main {
 
-}
+#main {}
 
 #header {
     height: 46px;
     background-color: #000;
     position: fixed;
-    top:0;
-    left:0;
-    right:0;
+    top: 0;
+    left: 0;
+    right: 0;
     /* width: 100%; */
     /* Fixed có nghĩa là làm nổi lên trên các element khác */
     /* 2 cách đều sử dụng được */
@@ -26,28 +25,33 @@ html {
      Thứ tự chồng nhau được sắp xếp dựa theo giá trị số, thành phần HTML nào có chỉ số z-index cao hơn sẽ nằm trên, ngược lại sẽ nằm dưới, giá trị mặc định là 0, có thể sử dụng số âm. 
     Giá trị tốt nhất là không sử dụng đơn vị. */
 }
-.clear{
-    clear:both; 
+
+.clear {
+    clear: both;
     /* Sử dụng để sửa lỗi float */
 }
+
 #nav {
-    display:inline-block;
+    display: inline-block;
 }
-#nav > li {
-    display:inline-block;
+
+#nav>li {
+    display: inline-block;
 }
+
 #nav li {
     text-decoration: none;
     position: relative;
- 
 }
-#nav > li > a {
+
+#nav>li>a {
     color: #fff;
     text-transform: uppercase;
 }
-#nav li a{
+
+#nav li a {
     text-decoration: none;
-    line-height: 46px;  
+    line-height: 46px;
     padding: 0 24px;
     display: inline-block;
 }
@@ -55,157 +59,159 @@ html {
 .nav-arrow-down {
     font-size: 14px;
 }
-#nav > li:hover > a{
-    background-color:#ccc;
+
+#nav>li:hover>a {
+    background-color: #ccc;
     color: #000;
-    
 }
 
-#nav li:hover .subnav{
-    display:block;
+#nav li:hover .subnav {
+    display: block;
 }
 
 #nav .subnav {
-    display:none;
+    display: none;
     position: absolute;
     background-color: #fff;
     list-style-type: none;
     box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
 }
 
-
-
-#nav .subnav a{
+#nav .subnav a {
     color: #000;
     line-height: 38px;
     padding-left: 10px;
-
 }
 
 #nav .subnav li:hover {
-    background-color:#ccc;
+    background-color: #ccc;
     color: #000;
 }
+
+
 /* Begin search */
-#header .search-btn{
-    float:right;
+
+#header .search-btn {
+    float: right;
     padding: 0 16px;
 }
-#header .search-icon{
+
+#header .search-icon {
     color: #fff;
     font-size: 20px;
     line-height: 46px;
-    
 }
 
-#header .search-btn:hover{
+#header .search-btn:hover {
     cursor: pointer;
     background: red;
-    
-/* End Search */
-    
+    /* End Search */
 }
+
 #slider {
- margin-top:46px;
- padding-top:50%; /* bằng 50% chiều rộng (chiều của chính nó)*/
- /* background-image: url(/img/slider/slider1.jpg);
+    margin-top: 46px;
+    padding-top: 50%;
+    /* bằng 50% chiều rộng (chiều của chính nó)*/
+    /* background-image: url(/img/slider/slider1.jpg);
  background-size: 100%;
  background-repeat: no-repeat; */
- background: url('/img/slider/slider1.jpg') top center / cover no-repeat;
- position: relative;
+    background: url('/img/slider/slider1.jpg') top center / cover no-repeat;
+    position: relative;
 }
 
-#slider .text-content{
- position: absolute;
- color: #fff;
- bottom: 47px;
- width:100%;
- text-align: center;
+#slider .text-content {
+    position: absolute;
+    color: #fff;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
 }
 
-#slider .text-heading{
-font-weight: 500;
+#slider .text-heading {
+    font-weight: 500;
 }
 
-#slider .text-description{
-margin-top: 25px;
+#slider .text-description {
+    margin-top: 25px;
 }
-
 
 #content {
     /* height:1000px;
     background: #ccc; */
 }
 
-.content-section{
-
-width: 800px;
-padding: 64px 0;
-margin-left: auto;
-margin-right: auto;
+.content-section {
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.content-heading{
-text-align: center;
-letter-spacing: 4px;
+.content-heading {
+    text-align: center;
+    letter-spacing: 4px;
 }
 
-.content-sub-heading{
-padding-top: 25px;
-font-weight: 400;
-text-align: center;
-font-style: italic;
-opacity: 0.4;
+.content-sub-heading {
+    padding-top: 25px;
+    font-weight: 400;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.4;
 }
 
-.about-noidung{
+.about-noidung {
     padding-top: 25px;
     text-align: justify;
     line-height: 1.4;
     /* line-height: chiều cao của box 1.4 là chữ Anh, 1.6 của Việt */
     /* justify : là để căn ngang chữ đều 2 bên */
 }
-#content .member-list{
+
+#content .member-list {
     margin-top: 47px;
     /* overflow: hidden;  - sử dụng để sửa lỗi float*/
     /* Thuộc tính overflow xác định điều gì sẽ xảy ra nếu một thành phần box tràn nội dung. */
 }
-#content .member-item{
+
+#content .member-item {
     width: calc(100% / 3);
     text-align: center;
     float: left;
 }
-#content .member-name{
-    
+
+#content .member-name {
     margin-bottom: 15px;
 }
-#content .member-img{
+
+#content .member-img {
     width: 153px;
     border-radius: 4px;
-    
-
 }
+
+
 /* Tour Section */
+
 #tour-section {
     background-color: #000;
     width: 100%;
     color: #fff;
 }
 
- .tickets-buy{
+.tickets-buy {
     margin-top: 40px;
     background-color: #fff;
 }
-.tickets-buy li{
+
+.tickets-buy li {
     font-size: 15px;
     color: #757575;
     padding: 11px 16px;
     list-style: none;
     border-bottom: 1px solid #ccc;
-    
 }
 
-.tickets-buy .sold-out{
+.tickets-buy .sold-out {
     background-color: red;
     color: #fff;
     display: inline-block;
@@ -213,7 +219,7 @@ opacity: 0.4;
     margin-left: 16px;
 }
 
-.tickets-buy .quantity{
+.tickets-buy .quantity {
     float: right;
     width: 24px;
     height: 24px;
@@ -225,14 +231,66 @@ opacity: 0.4;
     line-height: 24px;
 }
 
-#breadcrump {
-
+.places-list {
+    margin: 32px -8px 0;
+    overflow: hidden;
 }
 
-#barside {
-
+.place-item {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 8px;
 }
 
-#footer {
-
+.place-img {
+    width: 100%;
+    display: block;
 }
+
+.place-img:hover {
+    opacity: 0.60;
+}
+
+.place-body {
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    padding: 15px 16px;
+}
+
+.place-heading {
+    padding: 15px 0;
+    font-size: 15px;
+}
+
+.place-times {
+    padding-top: 15px;
+    opacity: 0.60;
+    font-style: italic;
+}
+
+.place-desc {
+    padding-top: 15px;
+    line-height: 1.4;
+}
+
+.place-buy-btn {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 7px 0px;
+    display: block;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.place-buy-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#breadcrump {}
+
+#barside {}
+
+#footer {}

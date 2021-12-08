@@ -192,7 +192,7 @@ opacity: 0.4;
     color: #fff;
 }
 
-#tour-section .tickets-buy{
+ .tickets-buy{
     margin-top: 40px;
     background-color: #fff;
 }
@@ -205,7 +205,7 @@ opacity: 0.4;
     
 }
 
-#tour-section .sold-out{
+.tickets-buy .sold-out{
     background-color: red;
     color: #fff;
     display: inline-block;

@@ -7,6 +7,43 @@
     html {
         font-family: Lato, sans-serif;
     }
+    /* Common - hàm dùng chung cho toàn website */
+    
+    .clear {
+        clear: both;
+        /* Sử dụng để sửa lỗi float */
+    }
+    /* hàng ngang */
+    
+    .row {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    /* hàng dọc */
+    
+    .col {
+        float: left;
+        padding: 0 8px;
+    }
+    /* chia thành 2 cột */
+    
+    .col-2 {
+        width: 50%;
+    }
+    /* chia thành 3 cột */
+    
+    .col-3 {
+        width: calc(100% / 3);
+    }
+    
+    .col-full {
+        width: 100%;
+    }
+    
+    .text-center {
+        text-align: center !important;
+    }
+    /* Main */
     
     #main {}
     
@@ -24,11 +61,6 @@
         /* Thuộc tính z-index thiết lập thứ tự xếp chồng nhau của một thành phần vị trí.
      Thứ tự chồng nhau được sắp xếp dựa theo giá trị số, thành phần HTML nào có chỉ số z-index cao hơn sẽ nằm trên, ngược lại sẽ nằm dưới, giá trị mặc định là 0, có thể sử dụng số âm. 
     Giá trị tốt nhất là không sử dụng đơn vị. */
-    }
-    
-    .clear {
-        clear: both;
-        /* Sử dụng để sửa lỗi float */
     }
     
     #nav {
@@ -172,12 +204,6 @@
         /* Thuộc tính overflow xác định điều gì sẽ xảy ra nếu một thành phần box tràn nội dung. */
     }
     
-    #content .member-item {
-        width: calc(100% / 3);
-        text-align: center;
-        float: left;
-    }
-    
     #content .member-name {
         margin-bottom: 15px;
     }
@@ -228,14 +254,9 @@
     }
     
     .places-list {
-        margin: 32px -8px 0;
+        margin-top: 32px;
+        margin-bottom: 48px;
         overflow: hidden;
-    }
-    
-    .place-item {
-        float: left;
-        width: calc(100% / 3);
-        padding: 0 8px;
     }
     
     .place-img {
@@ -280,6 +301,8 @@
         text-align: center;
         border: none;
         width: 100%;
+        cursor: pointer;
+        text-transform: uppercase;
     }
     
     .place-buy-btn:hover {
@@ -354,16 +377,17 @@
         margin-bottom: 12px;
     }
     
-    #modal-pay-btn {
+    .modal-pay-btn {
         width: 100%;
         background-color: #009688;
         color: #fff;
         border: none;
         height: 40px;
         cursor: pointer;
+        text-transform: uppercase;
     }
     
-    #modal-pay-btn:hover {
+    .modal-pay-btn:hover {
         opacity: 0.7;
     }
     
@@ -385,6 +409,29 @@
             opacity: 1;
             transform: translateY(0px);
         }
+    }
+    
+    .contact-1 {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    
+    .contact-2 {
+        font-size: 15px;
+    }
+    /* select những thẻ i có class là ti- */
+    
+    .contact-1 i[class*="ti-"] {
+        width: 30px;
+        display: inline-block;
+    }
+    
+    .contact-message {
+        width: 100%;
+    }
+    
+    .contact-content {
+        margin-top: 48px;
     }
     
     #breadcrump {}

@@ -72,20 +72,20 @@
                 ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                 consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <div class="member-list">
-                <div class="member-item">
+            <div class="row member-list">
+                <div class="col col-3 text-center">
                     <p class="member-name">
                         Name
                     </p>
                     <img src="./img/bandmember.jpg" alt="Name" class="member-img">
                 </div>
-                <div class="member-item">
+                <div class="col col-3 text-center">
                     <p class="member-name">
                         Name 2
                     </p>
                     <img src="./img/bandmember.jpg" alt="Name" class="member-img">
                 </div>
-                <div class="member-item">
+                <div class="col col-3 text-center">
                     <p class="member-name">
                         Name 3
                     </p>
@@ -111,32 +111,32 @@
                 </ul>
 
                 <!-- Place section -->
-                <div class="places-list">
-                    <div class="place-item">
-                        <img src="/img/newyork.jpg" alt="New York" class="place-img">
-                        <div class="place-body">
-                            <h3 class="place-heading">New York</h3>
-                            <p class="place-times">Fri 27 Nov 2016</p>
-                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="place-buy-btn js-buy-ticket">Mua vé</button>
+                <div class="row places-list">
+                    <div class="col col-3">
+                        <img src=" /img/newyork.jpg " alt="New York " class="place-img ">
+                        <div class="place-body ">
+                            <h3 class="place-heading ">New York</h3>
+                            <p class="place-times ">Fri 27 Nov 2016</p>
+                            <p class="place-desc ">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="place-buy-btn js-buy-ticket ">Mua vé</button>
                         </div>
                     </div>
-                    <div class="place-item">
-                        <img src="/img/paris.jpg" alt="New York" class="place-img">
-                        <div class="place-body">
-                            <h3 class="place-heading">Paris</h3>
-                            <p class="place-times">Sat 28 Nov 2016</p>
-                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="place-buy-btn js-buy-ticket">Mua vé</button>
+                    <div class="col col-3 ">
+                        <img src="/img/paris.jpg " alt="New York " class="place-img ">
+                        <div class="place-body ">
+                            <h3 class="place-heading ">Paris</h3>
+                            <p class="place-times ">Sat 28 Nov 2016</p>
+                            <p class="place-desc ">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="place-buy-btn js-buy-ticket ">Mua vé</button>
                         </div>
                     </div>
-                    <div class="place-item">
-                        <img src="/img/sanfran.jpg" alt="New York" class="place-img">
-                        <div class="place-body">
-                            <h3 class="place-heading">San Francisco</h3>
-                            <p class="place-times">Sun 29 Nov 2016</p>
-                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="place-buy-btn js-buy-ticket">Mua vé</button>
+                    <div class="col col-3">
+                        <img src="/img/sanfran.jpg " alt="New York " class="place-img ">
+                        <div class="place-body ">
+                            <h3 class="place-heading ">San Francisco</h3>
+                            <p class="place-times ">Sun 29 Nov 2016</p>
+                            <p class="place-desc ">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="place-buy-btn js-buy-ticket ">Mua vé</button>
                         </div>
                     </div>
                 </div>
@@ -145,61 +145,92 @@
         </div>
 
         <!-- Contact-Section -->
-        <div class="content-section">
-            <h2 class="content-heading">
+        <div class="content-section ">
+            <h2 class="content-heading ">
                 LIÊN HỆ
             </h2>
-            <p class="content-sub-heading">
+            <p class="content-sub-heading ">
                 Fan? Drop a note!
             </p>
+            <div class="row contact-content">
+                <div class="col col-2 contact-1">
+                    <p><i class="ti-location-pin"></i>Chicago, US </p>
+                    <p><i class="ti-mobile"></i>Phone: +00 151515 </p>
+                    <p><i class="ti-email"></i>Email: mail@mail.com </p>
+                </div>
+                <div class="col col-2">
+                    <form action="">
+                        <div class="row contact-2">
+                            <div class="col col-2">
+                                <input type="text" name="" placeholder="Name" id="" class="form-control">
+                            </div>
+                            <div class="col col-2">
+                                <input type="email" name="" placeholder="Email" id="" class="form-control">
+                            </div>
 
+
+                        </div>
+                        <div class="row">
+                            <div class="col col-full">
+                                <input type="text" name="" placeholder="Message" id="" class="form-control">
+                            </div>
+                        </div>
+                        <input type="submit" value="SEND">
+
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="modal js-modal">
-        <div class="modal-container js-modal-container">
-            <div class="modal-close js-modal-close">
-                <i class="ti-close"></i>
+
+
+
+    <div class="modal js-modal ">
+        <div class="modal-container js-modal-container ">
+            <div class="modal-close js-modal-close ">
+                <i class="ti-close "></i>
             </div>
 
-            <header class="modal-heading">
-                <i class="ti-bag" style="margin-right:10px;"></i> Tickets
+            <header class="modal-heading ">
+                <i class="ti-bag " style="margin-right:10px; "></i> Tickets
             </header>
 
-            <div class="modala-body">
-                <label for="so-luong-ve" class="modal-label">
-                    <i class="ti-shopping-cart"></i>
+            <div class="modala-body ">
+                <form>
+                    <label for="so-luong-ve " class="modal-label ">
+                    <i class="ti-shopping-cart "></i>
                     Tickets, $15 per person
                 </label>
-                <input type="text" id="so-luong-ve" class="modal-input" placeholder="Bạn mua bao nhiêu vé">
+                    <input type="text " id="so-luong-ve " class="modal-input " placeholder="Bạn muốn mua bao nhiêu vé ">
 
-                <label for="email-send" class="modal-label">
-                    <i class="ti-email"></i>
-                    Send to
+                    <label for="email-send " class="modal-label ">
+                    <i class="ti-user " style="padding-left: 5px "></i>
+                    Gửi vé tới mail của bạn
                 </label>
-                <input type="email" id="email-send" class="modal-input" placeholder="Email của bạn">
-
-                <button id="modal-pay-btn">
+                    <input type="email " id="email-send " class="modal-input " placeholder="Email của bạn ">
+                </form>
+                <button class="modal-pay-btn">
                     Thanh toán
-                    <i class="ti-check"></i>
+                    <i class="ti-check "></i>
                 </button>
             </div>
-            <div class="modal-footer">
-                Need <a href="#">help?</a>
+            <div class="modal-footer ">
+                Need <a href="# ">help?</a>
             </div>
         </div>
     </div>
 
-    <div id="breadcrump"></div>
+    <div id="breadcrump "></div>
 
-    <div id="barside"></div>
-
-    </div>
+    <div id="barside "></div>
 
     </div>
-    <div id="footer"></div>
+
+    </div>
+    <div id="footer "></div>
     <!-- Load external JavaScript -->
-    <!-- <script src="scripts.js"></script> -->
+    <!-- <script src="scripts.js "></script> -->
     <script>
         const buyBtns = document.querySelectorAll('.js-buy-ticket')
         const modal = document.querySelector('.js-modal')

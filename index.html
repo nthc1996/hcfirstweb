@@ -136,7 +136,7 @@
                             <h3 class="place-heading ">San Francisco</h3>
                             <p class="place-times ">Sun 29 Nov 2016</p>
                             <p class="place-desc ">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="place-buy-btn js-buy-ticket ">Mua vé</button>
+                            <button class="place-buy-btn js-buy-ticket">Mua vé</button>
                         </div>
                     </div>
                 </div>
@@ -153,30 +153,29 @@
                 Fan? Drop a note!
             </p>
             <div class="row contact-content">
-                <div class="col col-2 contact-1">
+
+                <div class="col col-2 contact-info">
                     <p><i class="ti-location-pin"></i>Chicago, US </p>
                     <p><i class="ti-mobile"></i>Phone: +00 151515 </p>
                     <p><i class="ti-email"></i>Email: mail@mail.com </p>
                 </div>
-                <div class="col col-2">
+
+                <div class="col col-2 contact-form">
                     <form action="">
-                        <div class="row contact-2">
+                        <div class="row ">
                             <div class="col col-2">
                                 <input type="text" name="" placeholder="Name" id="" class="form-control">
                             </div>
                             <div class="col col-2">
                                 <input type="email" name="" placeholder="Email" id="" class="form-control">
                             </div>
-
-
                         </div>
-                        <div class="row">
+                        <div class="row mt8 ">
                             <div class="col col-full">
                                 <input type="text" name="" placeholder="Message" id="" class="form-control">
                             </div>
                         </div>
-                        <input type="submit" value="SEND">
-
+                        <input type="submit" class="mt16 contact-send-btn" value="SEND">
                     </form>
                 </div>
             </div>
@@ -202,13 +201,13 @@
                     <i class="ti-shopping-cart "></i>
                     Tickets, $15 per person
                 </label>
-                    <input type="text " id="so-luong-ve " class="modal-input " placeholder="Bạn muốn mua bao nhiêu vé ">
+                    <input type="text " id="so-luong-ve " required class="modal-input " placeholder="Bạn muốn mua bao nhiêu vé ">
 
                     <label for="email-send " class="modal-label ">
                     <i class="ti-user " style="padding-left: 5px "></i>
                     Gửi vé tới mail của bạn
                 </label>
-                    <input type="email " id="email-send " class="modal-input " placeholder="Email của bạn ">
+                    <input type="email " id="email-send " required class="modal-input " placeholder="Email của bạn ">
                 </form>
                 <button class="modal-pay-btn">
                     Thanh toán
@@ -228,7 +227,9 @@
     </div>
 
     </div>
-    <div id="footer "></div>
+    <div id="footer ">
+        <img src="/img/map.jpg" alt="" class="footer-img">
+    </div>
     <!-- Load external JavaScript -->
     <!-- <script src="scripts.js "></script> -->
     <script>
@@ -238,6 +239,7 @@
         const modalContainer = document.querySelector('.js-modal-container')
             // Hàm hiển thị ra bảng mua vé
         function showBuyticket() {
+
             // const modal = document.querySelector('.js-modal') - dùng khi add kiểm tra hành vi người dùng thẳng vào html
             modal.classList.add('open')
         }

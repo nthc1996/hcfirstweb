@@ -40,6 +40,14 @@
         width: 100%;
     }
     
+    .mt8 {
+        margin-top: 8px !important;
+    }
+    
+    .mt16 {
+        margin-top: 16px !important;
+    }
+    
     .text-center {
         text-align: center !important;
     }
@@ -410,23 +418,33 @@
             transform: translateY(0px);
         }
     }
+    /* sử dụng để clear both sửa lỗi float */
     
-    .contact-1 {
-        font-size: 18px;
-        line-height: 1.5;
-    }
-    
-    .contact-2 {
-        font-size: 15px;
+    .row::after {
+        content: "";
+        display: block;
+        clear: both;
     }
     /* select những thẻ i có class là ti- */
+    /* Contact section */
     
-    .contact-1 i[class*="ti-"] {
+    .contact-info i[class*="ti-"] {
         width: 30px;
         display: inline-block;
     }
     
-    .contact-message {
+    .contact-info {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    
+    .contact-form {
+        font-size: 15px;
+    }
+    
+    .contact-form .form-control {
+        padding: 10px;
+        border: 1px solid #ccc;
         width: 100%;
     }
     
@@ -434,8 +452,30 @@
         margin-top: 48px;
     }
     
+    .contact-content .contact-send-btn {
+        float: right;
+        color: #fff;
+        background-color: #000;
+        border: none;
+        padding: 10px 16px;
+        cursor: pointer;
+    }
+    
+    .contact-content .contact-send-btn:hover {
+        color: #000;
+        background-color: #ccc;
+    }
+    
+    .contact-send {}
+    
     #breadcrump {}
     
     #barside {}
     
     #footer {}
+    
+    .footer-img {
+        width: 100%;
+        height: auto;
+        margin-top: 48px;
+    }

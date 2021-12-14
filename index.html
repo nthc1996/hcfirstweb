@@ -10,7 +10,7 @@
 <head>
 
 
-    <title>My first Website</title>
+    <title>The Band - My first website</title>
 
 
 
@@ -22,18 +22,19 @@
         <div id="header">
             <!-- Begin Navigation-->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour-section">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#social">Social</a></li>
                 <li>
                     <a href="#">More
                              <i class="nav-arrow-down ti-angle-down"></i>
                          </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extra</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extra</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -59,8 +60,8 @@
     </div>
 
     <div id="content">
-
-        <div class="content-section">
+        <!-- Content Section -->
+        <div id="band" class="content-section">
             <h2 class="content-heading">
                 THE BAND
             </h2>
@@ -145,7 +146,7 @@
         </div>
 
         <!-- Contact-Section -->
-        <div class="content-section ">
+        <div id="contact" class="content-section ">
             <h2 class="content-heading ">
                 LIÊN HỆ
             </h2>
@@ -179,6 +180,9 @@
                     </form>
                 </div>
             </div>
+        </div>
+        <div class="map-section">
+            <img src="/img/map.jpg" alt="" class="footer-img">
         </div>
     </div>
 
@@ -220,51 +224,51 @@
         </div>
     </div>
 
-    <div id="breadcrump "></div>
+    <div id="footer">
+        <div id="social" class="social-list">
+            <a href=""><i class="ti-facebook"></i></a>
+            <a href=""><i class="ti-instagram"></i></a>
+            <a href=""><i class="ti-twitter"></i></a>
+            <a href=""><i class="ti-pinterest"></i></a>
+            <a href=""><i class="ti-linkedin"></i></a>
+            <a href=""><i class="ti-youtube"></i></a> </div>
+        <p class="copyright">Powered by <a href="">w3.css</a></p>
 
-    <div id="barside "></div>
+        <!-- Load external JavaScript -->
+        <!-- <script src="scripts.js "></script> -->
+        <script>
+            const buyBtns = document.querySelectorAll('.js-buy-ticket')
+            const modal = document.querySelector('.js-modal')
+            const modalclose = document.querySelector('.js-modal-close')
+            const modalContainer = document.querySelector('.js-modal-container')
+                // Hàm hiển thị ra bảng mua vé
+            function showBuyticket() {
 
-    </div>
+                // const modal = document.querySelector('.js-modal') - dùng khi add kiểm tra hành vi người dùng thẳng vào html
+                modal.classList.add('open')
+            }
+            // Hàm tắt bảng mua vé
+            function hideBuyticket() {
 
-    </div>
-    <div id="footer ">
-        <img src="/img/map.jpg" alt="" class="footer-img">
-    </div>
-    <!-- Load external JavaScript -->
-    <!-- <script src="scripts.js "></script> -->
-    <script>
-        const buyBtns = document.querySelectorAll('.js-buy-ticket')
-        const modal = document.querySelector('.js-modal')
-        const modalclose = document.querySelector('.js-modal-close')
-        const modalContainer = document.querySelector('.js-modal-container')
-            // Hàm hiển thị ra bảng mua vé
-        function showBuyticket() {
+                modal.classList.remove('open')
 
-            // const modal = document.querySelector('.js-modal') - dùng khi add kiểm tra hành vi người dùng thẳng vào html
-            modal.classList.add('open')
-        }
-        // Hàm tắt bảng mua vé
-        function hideBuyticket() {
+            }
+            // Lặp lại qua từng thẻ và nghe hành vi Click
+            for (const buyBtn of buyBtns) {
+                buyBtn.addEventListener('click', showBuyticket)
 
-            modal.classList.remove('open')
-
-        }
-        // Lặp lại qua từng thẻ và nghe hành vi Click
-        for (const buyBtn of buyBtns) {
-            buyBtn.addEventListener('click', showBuyticket)
-
-        }
-        // Nghe hành vi click vào nút Close button
-        modalclose.addEventListener('click', hideBuyticket)
-            //khi click ngoài khung thì sẽ bị tắt bảng mua vé 
-        modal.addEventListener('click', hideBuyticket)
-            // Vì ở trên là phần cha, các thuộc tính trong nó đều bị ảnh hưởng nên
-            //vì Container chứa bảng thông tin, mình sẽ tạm dừng hành vi của thuộc tính cha
-            // bằng cách stopPropagation() 
-        modalContainer.addEventListener('click', function(event) {
-            event.stopPropagation()
-        })
-    </script>
+            }
+            // Nghe hành vi click vào nút Close button
+            modalclose.addEventListener('click', hideBuyticket)
+                //khi click ngoài khung thì sẽ bị tắt bảng mua vé 
+            modal.addEventListener('click', hideBuyticket)
+                // Vì ở trên là phần cha, các thuộc tính trong nó đều bị ảnh hưởng nên
+                //vì Container chứa bảng thông tin, mình sẽ tạm dừng hành vi của thuộc tính cha
+                // bằng cách stopPropagation() 
+            modalContainer.addEventListener('click', function(event) {
+                event.stopPropagation()
+            })
+        </script>
 </body>
 
 </html>

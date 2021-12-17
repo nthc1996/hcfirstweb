@@ -11,7 +11,7 @@
     /* Common - hàm dùng chung cho toàn website */
     
     .clear {
-        clear: both;
+        clear: both !important;
         /* Sử dụng để sửa lỗi float */
     }
     /* hàng ngang */
@@ -29,16 +29,16 @@
     /* chia thành 2 cột */
     
     .col-2 {
-        width: 50%;
+        width: 50% !important;
     }
     /* chia thành 3 cột */
     
     .col-3 {
-        width: calc(100% / 3);
+        width: calc(100% / 3) !important;
     }
     
     .col-full {
-        width: 100%;
+        width: 100% !important;
     }
     
     .mt8 {
@@ -54,7 +54,9 @@
     }
     /* Main */
     
-    #main {}
+    #main {
+        /* overflow: hidden; */
+    }
     
     #header {
         height: 46px;
@@ -181,9 +183,13 @@
     
     .content-section {
         width: 800px;
+        /* nếu màn hình device nhỏ hơn 800px thì chạy lệnh dưới là maxwidth */
+        max-width: 100%;
         padding: 64px 0 118px;
         margin-left: auto;
         margin-right: auto;
+        padding-right: 16px;
+        padding-left: 16px;
     }
     
     .content-heading {

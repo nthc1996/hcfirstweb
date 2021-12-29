@@ -132,15 +132,33 @@
     }
     /* Begin search */
     
+    #header .menu-mobile-btn,
     #header .search-btn {
         float: right;
         padding: 0 16px;
     }
     
+    .menu-mobile-btn {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    #header .menu-icon,
     #header .search-icon {
         color: #fff;
         font-size: 20px;
         line-height: 46px;
+    }
+    
+    #header .menu-mobile-btn:hover {
+        background: #ccc;
+        /* End Search */
+    }
+    
+    #header .menu-mobile-btn:hover .menu-icon {
+        color: #000;
     }
     
     #header .search-btn:hover {

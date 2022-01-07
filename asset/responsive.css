@@ -18,7 +18,10 @@
 
 /* Phone */
 
-@media (max-width: 740px) {
+@media (max-width: 739px) {
+    #content .s-col-full {
+        width: 100%;
+    }
     #nav {
         display: block;
     }
@@ -47,5 +50,12 @@
     }
     #header .menu-mobile-btn {
         display: block;
+    }
+    #content .member-item {
+        margin-top: 30px;
+        width: 100%;
+    }
+    #content .member-img {
+        width: 60%;
     }
 }

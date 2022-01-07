@@ -29,12 +29,12 @@
     /* chia thành 2 cột */
     
     .col-2 {
-        width: 50% !important;
+        width: 50%;
     }
     /* chia thành 3 cột */
     
     .col-3 {
-        width: calc(100% / 3) !important;
+        width: calc(100% / 3);
     }
     
     .col-full {
@@ -47,6 +47,10 @@
     
     .mt16 {
         margin-top: 16px !important;
+    }
+    
+    .mt32 {
+        margin-top: 32px !important;
     }
     
     .text-center {
@@ -243,7 +247,7 @@
     
     #content .member-img {
         width: 153px;
-        border-radius: 4px;
+        border-radius: 5px;
     }
     /* Tour Section */
     
@@ -287,7 +291,7 @@
     }
     
     .places-list {
-        margin-top: 32px;
+        margin-top: 16px;
         overflow: hidden;
     }
     

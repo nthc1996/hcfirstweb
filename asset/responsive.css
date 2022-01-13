@@ -19,8 +19,11 @@
 /* Phone */
 
 @media (max-width: 739px) {
-    #content .s-col-full {
+    .s-col-full {
         width: 100%;
+    }
+    .s-mt16 {
+        margin-top: 16px;
     }
     #nav {
         display: block;
